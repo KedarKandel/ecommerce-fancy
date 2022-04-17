@@ -15,7 +15,7 @@ export const slideItems = [
     },
     {
         id: 3,
-        img: "https://i.pinimg.com/736x/34/f0/e7/34f0e792bac660511f0ba36fa3bb3ce7.jpg",
+        img: "https://thumbs.dreamstime.com/b/man-woman-shopping-bags-bright-picture-men-women-39379094.jpg",
         title: "WINTER SALE",
         desc: "STYLISH WINTER WEARS!  GET 30% OFF ON NEW ARRIVALS",
         bg: "white"
@@ -42,15 +42,15 @@ export const categories = [
   export const popularProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img:"https://5.imimg.com/data5/SELLER/Default/2021/6/YR/AL/RD/105233875/20210308-190130-250x250.jpg",
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://n.nordstrommedia.com/id/sr3/55811a81-06ea-4941-9c08-61b175c9984e.jpeg?h=365&w=240&dpr=2",
     },
     {
       id:3,
-      img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+      img:"https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg",
     },
     {
       id:4,
@@ -58,7 +58,7 @@ export const categories = [
     },
     {
       id:5,
-      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+      img:"https://m.media-amazon.com/images/I/81-SLkiVM0S._UL1500_.jpg",
     },
     {
       id:6,
@@ -66,10 +66,18 @@ export const categories = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://i.ebayimg.com/images/g/cnQAAOSweW5VAw-a/s-l400.jpg",
     },
     {
       id:8,
+      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    },
+    {
+      id:9,
+      img:"https://www.hellyhansen.com/media/catalog/product/5/3/53515_349-1-hero.jpg?quality=90&bg-color=255,255,255&fit=bounds&height=410&width=410&canvas=410:410",
+    },
+    {
+      id:10,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]

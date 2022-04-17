@@ -42,7 +42,6 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
-
   font-weight: bold;
 `;
 
@@ -56,13 +55,10 @@ const MenuItem = styled.div`
   cursor: pointer;
   font-size: 18px;
   margin-left: 30px;
-  color: black
+  color: black;
 `;
 
 const Navbar = () => {
-
-
-
   return (
     <Container>
       <Wrapper>
@@ -71,7 +67,7 @@ const Navbar = () => {
           <ArrowDown />
           <SearchContainer>
             <Input />
-            <SearchIcon style={{color: "gray", fontSize:17}}/>
+            <SearchIcon style={{ color: "gray", fontSize: 17 }} />
           </SearchContainer>
         </Left>
         <Center>
@@ -81,8 +77,8 @@ const Navbar = () => {
           <MenuItem>LOGIN</MenuItem>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>
-            <Badge badgeContent={2} color="primary" >
-              <Cart style={{fontSize: 30}}/>
+            <Badge badgeContent={2} color="primary">
+              <Cart style={{ fontSize: 30 }} />
             </Badge>
           </MenuItem>
         </Right>
