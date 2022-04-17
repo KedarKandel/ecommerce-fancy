@@ -1,16 +1,21 @@
-import Home from "./pages/Home";
+
 import styled from "styled-components";
+import Product from "./pages/Product";
+import Home from "./pages/Home";
+import ProductList from "./pages/ProductList";
+
+
 
 
 const Container = styled.div`
-  box-sizing: border-box;
+
  
 `;
 
 function App() {
   return (
     <Container>
-      <Home />
+      <Product/>
     </Container>
   );
 }

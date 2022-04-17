@@ -21,6 +21,7 @@ const Logo = styled.h1`
   color: white;
   font-size: 30px;
   margin-bottom: 20px;
+  text-decoration: underline;
 `;
 const Desc = styled.p`
   font-size: 14px;
@@ -148,7 +149,7 @@ const Footer = () => {
            <PhoneIcon style={{marginRight:"5px", fontSize: "30px"}}/> +358 00 000 0000
         </ContactItem>
         <ContactItem>
-          <MailIcon style={{marginRight:"5px", fontSize: "30px"}}/>  kk&shop@gmail.com
+          <MailIcon style={{marginRight:"5px", fontSize: "30px"}}/>  kk&shop07@gmail.com
         </ContactItem>
       </Right>
     </Container>
