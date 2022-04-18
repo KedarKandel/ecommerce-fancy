@@ -3,6 +3,7 @@ import { useState } from "react";
 import { slideItems } from "../Data";
 import ArrowBack from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForward from "@mui/icons-material/ArrowForwardIos";
+import {mobiles} from "../responsive"
 
 const Container = styled.div`
   height: 100vh;
@@ -10,6 +11,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  ${mobiles({display:"none"})}
 `;
 
 const Arrow = styled.div`
@@ -35,6 +37,8 @@ const Wrapper = styled.div`
   display: flex;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
   transition: all 1.5s ease;
+
+
 `;
 const Slide = styled.div`
   display: flex;

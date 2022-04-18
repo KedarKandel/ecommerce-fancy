@@ -6,10 +6,12 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
+import { mobiles } from "../responsive";
 
 const Container = styled.div`
   display: flex;
   background-color: #008e89;
+  ${mobiles({flexDirection:"column",  padding:"20px", alignItems:"center", justifyContent:"center"})}
 `;
 const Left = styled.div`
   flex: 1;
@@ -22,18 +24,21 @@ const Logo = styled.h1`
   font-size: 30px;
   margin-bottom: 20px;
   text-decoration: underline;
+  ${mobiles({fontSize:"20px"})}
 `;
 const Desc = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   color: white;
   letter-spacing: 1px;
-  line-height: 20px;
+ 
   margin-bottom: 10px;
+  ${mobiles({fontSize:"12px", lineHeight:"none"})}
 `;
 const SocialDiv = styled.div`
   display: flex;
   margin-top: 10px;
   padding: 10px;
+  ${mobiles({marginTop:"5px"})}
 `;
 const SocialIcon = styled.div`
   height: 40px;
@@ -46,6 +51,7 @@ const SocialIcon = styled.div`
   background-color: ${(props) => props.color};
   margin-right: 20px;
   cursor: pointer;
+
 `;
 
 const Center = styled.div`
@@ -53,6 +59,7 @@ const Center = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  ${mobiles({height:"50px"})}
 `;
 
 const Title = styled.h3`
@@ -60,6 +67,7 @@ const Title = styled.h3`
   color: white;
   margin-bottom: 10px;
   text-decoration: underline;
+  ${mobiles({fontSize:"20px"})}
 `;
 const List = styled.ul`
   margin: 0;
@@ -68,13 +76,15 @@ const List = styled.ul`
   flex-wrap: wrap;
   color: white;
   list-style: none;
+
 `;
 const ListItem = styled.li`
   font-size: 20px;
   color: #d5d5f3;
   width: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   cursor: pointer;
+  ${mobiles({fontSize:"13px"})}
 `;
 
 const Right = styled.div`
@@ -86,12 +96,13 @@ const Right = styled.div`
 
 const ContactItem = styled.div`
 padding: 15px 0;
-margin-bottom: 15px;
+margin-bottom: 5px;
 color: white;
 display: flex;
 align-items: center;
+${mobiles({margin:"0px", fontSize:"13px"})}
 `
-const Payment = styled.div``
+
     
 
 const Footer = () => {

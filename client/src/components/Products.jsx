@@ -8,9 +8,13 @@ const Container = styled.div`
   flex-wrap: wrap;
 `;
 
+const Title = styled.h1`
+
+`
 const Products = () => {
   return (
     <Container>
+      <Title>Products</Title>
       {popularProducts.map((item) => (
         <Product key={item.id} item={item} />
       ))}
