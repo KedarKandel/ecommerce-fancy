@@ -3,7 +3,7 @@ import { useState } from "react";
 import { slideItems } from "../Data";
 import ArrowBack from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForward from "@mui/icons-material/ArrowForwardIos";
-import {laptops, mobiles, tablets} from "../responsive"
+import {Desktops, laptops, mobiles, tablets} from "../responsive"
 
 const Container = styled.div`
   height: 100vh;
@@ -49,7 +49,7 @@ const Slide = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${(props) => props.bg};
- 
+  ${Desktops({width:"95vw", height:"95vw"})}
 `;
 
 const ImageContainer = styled.div`
@@ -63,11 +63,13 @@ const Image = styled.img`
   margin-left: 60px;
   ${tablets({marginLeft:"0px", width:"90%", height:"70%"})} 
   ${laptops({marginLeft:"15px"})} 
+  ${Desktops({marginLeft:"15px"})}
 `;
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
   ${tablets({padding:"0px 25px 0px 0px"})} 
+
 `;
 
 const Title = styled.h1`

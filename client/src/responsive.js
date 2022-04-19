@@ -16,15 +16,15 @@ export const tablets = (props) => {
   };
   export const laptops = (props) => {
     return css`
-      @media only screen and (min-width:768px) and (max-width: 925px) {
+      @media only screen and (min-width:767px) and (max-width: 925px) {
         ${props}
       }
     `;
   };
-//   export const Desktops = (props) => {
-//     return css`
-//       @media only screen and (max-width: 1024px) {
-//         ${props}
-//       }
-//     `;
-//   };
+  export const Desktops = (props) => {
+    return css`
+      @media only screen and (min-width:926px)  and (max-width: 970px) {
+        ${props}
+      }
+    `;
+  };
