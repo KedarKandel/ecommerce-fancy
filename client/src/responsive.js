@@ -9,18 +9,18 @@ export const mobiles = (props) => {
 };
 export const tablets = (props) => {
     return css`
-      @media only screen and (max-width: 768px) and (min-width:381){
+      @media only screen and (max-width: 768px) and (min-width:381px){
         ${props}
       }
     `;
   };
-//   export const laptops = (props) => {
-//     return css`
-//       @media only screen and (max-width: 1024px) {
-//         ${props}
-//       }
-//     `;
-//   };
+  export const laptops = (props) => {
+    return css`
+      @media only screen and (min-width:768px) and (max-width: 925px) {
+        ${props}
+      }
+    `;
+  };
 //   export const Desktops = (props) => {
 //     return css`
 //       @media only screen and (max-width: 1024px) {

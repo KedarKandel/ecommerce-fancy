@@ -9,7 +9,8 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-
+width: 100%;
+text-align: center;
 `
 const Products = () => {
   return (

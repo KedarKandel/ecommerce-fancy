@@ -4,7 +4,7 @@ import ArrowDown from "@mui/icons-material/ArrowDropDown";
 import Cart from "@mui/icons-material/AddShoppingCartOutlined";
 import { Badge } from "@mui/material";
 
-import { mobiles } from "../responsive";
+import { mobiles, tablets } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   ${mobiles({padding:"12px 15px"})}
+ 
 `;
 const Left = styled.div`
   flex: 1;
@@ -26,6 +27,7 @@ const Left = styled.div`
 const Language = styled.span`
   font-size: 15px;
   ${mobiles({fontSize:"10px"})}
+  ${tablets({marginLeft:"-5px"})} 
 `;
 
 const SearchContainer = styled.div`

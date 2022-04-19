@@ -6,18 +6,20 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
-import { mobiles } from "../responsive";
+import { mobiles, tablets } from "../responsive";
 
 const Container = styled.div`
   display: flex;
   background-color: #008e89;
   ${mobiles({flexDirection:"column",  padding:"20px", alignItems:"center", justifyContent:"center"})}
+  ${tablets({padding:"10px"})}
 `;
 const Left = styled.div`
   flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  ${tablets({padding:"0 13px"})}
 `;
 const Logo = styled.h1`
   color: white;
@@ -30,9 +32,9 @@ const Desc = styled.p`
   font-size: 15px;
   color: white;
   letter-spacing: 1px;
- 
   margin-bottom: 10px;
   ${mobiles({fontSize:"12px", lineHeight:"none"})}
+  ${tablets({letterSpacing:"0px"})}
 `;
 const SocialDiv = styled.div`
   display: flex;
@@ -60,6 +62,7 @@ const Center = styled.div`
   flex-direction: column;
   padding: 20px;
   ${mobiles({height:"50px"})}
+  ${tablets({padding:"10px"})}
 `;
 
 const Title = styled.h3`
@@ -85,6 +88,7 @@ const ListItem = styled.li`
   margin-bottom: 10px;
   cursor: pointer;
   ${mobiles({fontSize:"13px"})}
+  ${tablets({fontSize:"17px"})}
 `;
 
 const Right = styled.div`

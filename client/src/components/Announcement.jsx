@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobiles } from "../responsive";
 
 const Container = styled.div`
 height: 30px;
@@ -9,6 +10,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 color: white;
+${mobiles({padding:"12px 15px"})}
 `
 
 

@@ -1,6 +1,6 @@
 import SendIcon from "@mui/icons-material/Send";
 import styled from "styled-components";
-import {mobiles} from "../responsive"
+import {laptops, mobiles, tablets} from "../responsive"
 
 const Container = styled.div`
   background-color: #fcf5f5;
@@ -10,6 +10,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   ${mobiles({height:"30vh"})}
+  ${tablets({height:"40vh"})}
+  ${laptops({height:"40vh"})} 
 `;
 const Title = styled.h1`
   font-size: 70px;
