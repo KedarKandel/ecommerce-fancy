@@ -6,11 +6,12 @@ import Products from "../components/Products";
 import Slider from "../components/Slider";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
-import { mobiles } from "../responsive";
+
 
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 
 `;
 
