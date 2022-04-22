@@ -20,10 +20,10 @@ const ProductSchema = new mongoose.Schema(
     },
 
     size: {
-      type: string,
+      type: String,
     },
     color: {
-      type: string,
+      type: String,
     },
     price: {
       type: Number,
@@ -33,4 +33,4 @@ const ProductSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("User", ProductSchema);
+module.exports = mongoose.model("Product", ProductSchema);
