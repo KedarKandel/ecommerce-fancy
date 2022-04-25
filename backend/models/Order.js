@@ -8,7 +8,7 @@ const OrderSchema = new mongoose.Schema(
     },
     products: [
       {
-        productd: {
+        productId: {
           type: String,
         },
         quantity: {

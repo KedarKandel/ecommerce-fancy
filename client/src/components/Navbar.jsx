@@ -5,29 +5,28 @@ import Cart from "@mui/icons-material/AddShoppingCartOutlined";
 import { Badge } from "@mui/material";
 
 import { mobiles, tablets } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
-  ${mobiles({height:"70px"})}
+  ${mobiles({ height: "70px" })}
 `;
 const Wrapper = styled.div`
   padding: 12px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ${mobiles({padding:"12px 15px"})}
- 
+  ${mobiles({ padding: "12px 15px" })}
 `;
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-
 `;
 const Language = styled.span`
   font-size: 15px;
-  ${mobiles({fontSize:"10px"})}
-  ${tablets({marginLeft:"-5px"})} 
+  ${mobiles({ fontSize: "10px" })}
+  ${tablets({ marginLeft: "-5px" })}
 `;
 
 const SearchContainer = styled.div`
@@ -42,7 +41,7 @@ const Input = styled.input`
   border: none;
   height: 25px;
   outline: none;
-  ${mobiles({width:"50px", marginLeft:"-5px" })}
+  ${mobiles({ width: "50px", marginLeft: "-5px" })}
 `;
 
 const Center = styled.div`
@@ -52,7 +51,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  ${mobiles({fontSize:"20px", marginLeft: "5px"})}
+  ${mobiles({ fontSize: "20px", marginLeft: "5px" })}
 `;
 
 const Right = styled.div`
@@ -60,15 +59,16 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 `;
 const MenuItem = styled.div`
   cursor: pointer;
   font-size: 18px;
   margin-left: 30px;
   color: black;
-  ${mobiles({fontSize:"15px", marginLeft:"5px"})}
+  ${mobiles({ fontSize: "15px", marginLeft: "5px" })}
 `;
+
+
 
 const Navbar = () => {
   return (
@@ -86,13 +86,19 @@ const Navbar = () => {
           <Logo>Kk & Shop.</Logo>
         </Center>
         <Right>
-          <MenuItem>LOGIN</MenuItem>
-          <MenuItem>REGISTER</MenuItem>
+          <Link to="/login" style = {{textDecoration:"none"}}>
+            <MenuItem>LOGIN</MenuItem>
+          </Link>
+          <Link to="/register" style = {{textDecoration:"none"}}>
+            <MenuItem>REGISTER</MenuItem>
+          </Link>
+        <Link to = "/carts" style={{ textDecoration: "none" }}>
           <MenuItem>
             <Badge badgeContent={2} color="primary">
               <Cart style={{ fontSize: 30 }} />
             </Badge>
           </MenuItem>
+          </Link>
         </Right>
       </Wrapper>
     </Container>

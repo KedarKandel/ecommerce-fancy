@@ -68,22 +68,23 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-// GET MONTYHLY INCOME
+// GET MONTYHLY INCOME for admin panel
 
-router.get("/income", (req, res) => {
+router.get("/income", verifyTokenAndAdmin, async (req, res) => {
   const date = new Date();
   const lastMonth = new Date(date.setMonth(date.getMonth() - 1));
   const previousMonth = new Date(new Date().setMonth(lastMonth.getMonth() - 1));
 
   try {
-    const income = Order.aggregate([
+    const income = await Order.aggregate([
       { $match: { createdAt: { $gte: previousMonth } } },
       {
         $project: {
           month: { $month: "$createdAt" },
           sales: "$amount",
         },
-
+      },
+      {
         $group: {
           _id: "$month",
           total: { $sum: "$sales" },

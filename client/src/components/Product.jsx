@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import AddShoppingCart from "@mui/icons-material/AddShoppingCartOutlined";
+import { Link } from "react-router-dom";
 
 
 const Info = styled.div`
@@ -56,12 +57,16 @@ const Product = ({ item }) => {
     <Container>
       <Image src={item.img} />
       <Info>
+        <Link to ="/carts" style={{ textDecoration: "none" }}>
         <Icon>
           <AddShoppingCart style={{ fontSize: "30px", color:"red" }} />
         </Icon>
+        </Link>
+        <Link to="/productList" style={{ textDecoration: "none" }}>
         <Icon>
           <SearchOutlinedIcon style={{ fontSize: "30px", color:"red"}} />
         </Icon>
+        </Link>
         <Icon>
           <FavoriteBorderOutlinedIcon style={{ fontSize: "30px", color:"red" }} />
         </Icon>

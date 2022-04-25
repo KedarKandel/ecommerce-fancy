@@ -12,6 +12,7 @@ const Container = styled.div`
       center;
   background-size: cover;
   opacity: .6;
+
 `;
 const Wrapper = styled.div`
   width: 30%;

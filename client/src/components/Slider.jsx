@@ -3,7 +3,8 @@ import { useState } from "react";
 import { slideItems } from "../Data";
 import ArrowBack from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForward from "@mui/icons-material/ArrowForwardIos";
-import {Desktops, laptops, mobiles, tablets} from "../responsive"
+import { Desktops, laptops, mobiles, tablets } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 100vh;
@@ -11,8 +12,8 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobiles({display:"none"})}
-  ${tablets({padding:"0px 15px", width:"95vw"})} 
+  ${mobiles({ display: "none" })}
+  ${tablets({ padding: "0px 15px", width: "95vw" })}
 `;
 
 const Arrow = styled.div`
@@ -32,16 +33,15 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 10;
-  ${tablets({height:"35px", width:"35px" })} 
+  ${tablets({ height: "35px", width: "35px" })}
 `;
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
   transition: all 1.5s ease;
-  ${tablets({padding:"0px 10px 0px 0px", height:"90%"})} 
-  ${laptops({padding:"0px 25px 0px 0px"})} 
-
+  ${tablets({ padding: "0px 10px 0px 0px", height: "90%" })}
+  ${laptops({ padding: "0px 25px 0px 0px" })}
 `;
 const Slide = styled.div`
   display: flex;
@@ -49,7 +49,7 @@ const Slide = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${(props) => props.bg};
-  ${Desktops({width:"95vw", height:"95vw"})}
+  ${Desktops({ width: "95vw", height: "95vw" })}
 `;
 
 const ImageContainer = styled.div`
@@ -61,21 +61,20 @@ const Image = styled.img`
   opacity: 0.8;
   margin-top: 15px;
   margin-left: 60px;
-  ${tablets({marginLeft:"0px", width:"90%", height:"70%"})} 
-  ${laptops({marginLeft:"15px"})} 
-  ${Desktops({marginLeft:"15px"})}
+  ${tablets({ marginLeft: "0px", width: "90%", height: "70%" })}
+  ${laptops({ marginLeft: "15px" })} 
+  ${Desktops({ marginLeft: "15px" })}
 `;
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
-  ${tablets({padding:"0px 25px 0px 0px"})} 
-
+  ${tablets({ padding: "0px 25px 0px 0px" })}
 `;
 
 const Title = styled.h1`
   font-size: 70px;
-  ${tablets({fontSize:"40px", marginTop:"-5px"})} 
-  ${laptops({fontSize:"50px"})} 
+  ${tablets({ fontSize: "40px", marginTop: "-5px" })}
+  ${laptops({ fontSize: "50px" })}
 `;
 
 const Desc = styled.p`
@@ -83,7 +82,7 @@ const Desc = styled.p`
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 500;
-  ${tablets({marginTop:"-3px"})} 
+  ${tablets({ marginTop: "-3px" })}
 `;
 
 const Button = styled.button`
@@ -117,7 +116,10 @@ const Slider = () => {
             <InfoContainer>
               <Title>{i.title}</Title>
               <Desc>{i.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Link to ="/productList" style={{ textDecoration: "none" }}>
+             
+                <Button>SHOW NOW</Button>
+              </Link>
             </InfoContainer>
           </Slide>
         ))}
